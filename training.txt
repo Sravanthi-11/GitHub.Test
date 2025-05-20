@@ -1,0 +1,9 @@
+GitHub Training:
+git config --global --unset user.name
+git config --global --unset user.email
+git config --global user.email ""
+git config --global user.name ""
+git clone <repo_url>
+git add .
+git commit -m "commit message"
+git push
