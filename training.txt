@@ -7,3 +7,7 @@ git clone <repo_url>
 git add .
 git commit -m "commit message"
 git push
+
+Code owners are set on repository level - branch_protection_rules - CODEOWNERS(file, add) - settings(manage access)
+Cannot delete main branch directly, canonly delete feature branches
+created code owner
