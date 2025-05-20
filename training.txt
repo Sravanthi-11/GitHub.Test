@@ -1,0 +1,1 @@
+1. By default always prefer COmmit with merge conflict.
