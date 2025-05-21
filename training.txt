@@ -7,6 +7,8 @@ git clone <repo_url>
 git add .
 git commit -m "commit message"
 git push
+git checkout -b new-branch-name
+git checkout branch-name (to switch branches)
 
 Code owners are set on repository level - branch_protection_rules - CODEOWNERS(file, add) - settings(manage access)
 Cannot delete main branch directly, canonly delete feature branches
