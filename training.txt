@@ -13,3 +13,4 @@ git checkout branch-name (to switch branches)
 Code owners are set on repository level - branch_protection_rules - CODEOWNERS(file, add) - settings(manage access)
 Cannot delete main branch directly, canonly delete feature branches
 created code owner
+created actions
