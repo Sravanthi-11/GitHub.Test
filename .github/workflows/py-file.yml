@@ -1,0 +1,29 @@
+name: Run Python Script
+
+on: 
+  workflow_dispatch
+
+jobs: 
+  push-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout this repository
+      uses: actions/checkout@v2
+
+    - name: Checkout another repository
+      uses: actions/checkout@v2
+      with:
+        repository: Sravanthi-11/GitHub.Test2
+        token: ${{ secrets.GH_PAT }}
+        path: py-repo
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3x'
+
+    - name: Run Python Script
+      run: |
+        cd py-repo
+        python script.py
