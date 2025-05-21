@@ -1,0 +1,27 @@
+name: Push to protected branch
+
+on: 
+  workflow_dispatch
+
+jobs: 
+  push-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Make Changes
+      run: |
+        git config --global user.email "20211a6605@bvrit.ac.in"
+        git config --global user.name "Sravanthi-11"
+
+        echo "New Changes" >> changes.txt
+        git add changes.txt
+        git commit -m "Add Changes"
+
+    - name: Push Changes
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+      run: |
+        git push origin feature
