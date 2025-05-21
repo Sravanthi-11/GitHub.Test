@@ -25,3 +25,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo " The job was automatically triggered by a ${{ github.event_name }} "
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
