@@ -28,6 +28,5 @@ jobs:
 
     - name: Run Python Script
       run: |
-        cd py-repo
         python script.py
 
